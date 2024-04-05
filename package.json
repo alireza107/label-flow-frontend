@@ -9,7 +9,8 @@
     "lint": "next lint",
     "eslint:format": "eslint src --fix",
     "prettier:format": "prettier --write .",
-    "prettier:check": "prettier --check \"**/*.{ts,tsx,json}\""
+    "prettier:check": "prettier --check \"**/*.{ts,tsx,json}\"",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "14.1.4",
