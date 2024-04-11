@@ -33,4 +33,4 @@ module.exports = {
     'no-console': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 1,
   },
-};
+}

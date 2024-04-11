@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div>Labelflow Project</div>;
+  return <div>Labelflow Project</div>
 }
