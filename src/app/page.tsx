@@ -1,3 +1,5 @@
-export default function Home() {
-  return <div>Labelflow Project</div>
+import { Colors } from '@/components/colors'
+
+export default function Home(): JSX.Element {
+  return <Colors />
 }
