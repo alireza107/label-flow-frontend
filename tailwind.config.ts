@@ -1,6 +1,6 @@
-import type { Config } from 'tailwindcss'
 import { colord, extend } from 'colord'
 import mixPlugin from 'colord/plugins/mix'
+import type { Config } from 'tailwindcss'
 
 extend([mixPlugin])
 
@@ -23,26 +23,20 @@ export const tailwindColors: ColorObject = {
   transparent: 'transparent',
   black: '#000000',
   white: '#FFFFFF',
-  primary: '#4BB0B7',
+  primary: '#4318FF',
   'primary-content': '#FFFFFF',
-  'primary-focus': generateDarkenColorFrom('#4BB0B7'),
-  secondary: '#FFA552',
-  'secondary-content': '#FFFFFF',
-  'secondary-focus': generateDarkenColorFrom('#FFA552'),
-  neutral: '#939393',
-  'neutral-content': generateForegroundColorFrom('#FFFFFF'),
-  'neutral-focus': generateDarkenColorFrom('#939393', 0.03),
-  'base-25': '#E6E6E6',
-  'base-75': '#B5B5B5',
-  'base-200': '#686868',
+  'primary-focus': generateDarkenColorFrom('#4318FF'),
+  'base-25': '#F4F7FE',
+  'base-75': '#E0E5F2',
+  'base-200': '#A3AED0',
   info: '#5790FF',
   'info-content': generateForegroundColorFrom('#5790FF'),
-  success: '#33D373',
-  'success-content': generateForegroundColorFrom('#33D373'),
-  warning: '#FF8D3A',
-  'warning-content': generateForegroundColorFrom('#FF8D3A'),
-  error: '#DF5555',
-  'error-content': generateForegroundColorFrom('#DF5555'),
+  success: '#05CD99',
+  'success-content': generateForegroundColorFrom('#05CD99'),
+  warning: '#FFCE20',
+  'warning-content': generateForegroundColorFrom('#FFCE20'),
+  error: '#EE5D50',
+  'error-content': generateForegroundColorFrom('#EE5D50'),
 }
 
 const config: Config = {
