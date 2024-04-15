@@ -1,5 +1,5 @@
-import { Colors } from '@/components/colors'
+import { Button } from '@/components/button'
 
 export default function Home(): JSX.Element {
-  return <Colors />
+  return <Button>asdf</Button>
 }
