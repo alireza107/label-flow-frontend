@@ -24,6 +24,7 @@ export const tailwindColors: ColorObject = {
   black: '#000000',
   white: '#FFFFFF',
   primary: '#4318FF',
+  text: '#2B3674',
   'primary-content': '#FFFFFF',
   'primary-focus': generateDarkenColorFrom('#4318FF'),
   'base-25': '#F4F7FE',
