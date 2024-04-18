@@ -1,0 +1,2 @@
+1- implement icon component
+2- use icon component to change icons in menu item
