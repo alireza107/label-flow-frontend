@@ -1,0 +1,13 @@
+.menu-item {
+  @apply flex items-center cursor-pointer px-1 py-3 text-base-200 gap-2;
+
+  &--active {
+    @apply text-text border-r-4 border-primary;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      @apply bg-base-75;
+    }
+  }
+}

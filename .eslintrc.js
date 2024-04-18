@@ -1,6 +1,14 @@
 module.exports = {
   root: true,
-  extends: ['next/core-web-vitals', 'eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended', 'prettier', 'plugin:storybook/recommended'],
+  extends: [
+    'next/core-web-vitals',
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+    'prettier',
+    'plugin:storybook/recommended',
+  ],
   plugins: ['react', '@typescript-eslint', 'react-hooks'],
   parser: '@typescript-eslint/parser',
   settings: {
