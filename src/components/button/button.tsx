@@ -1,5 +1,6 @@
 import classNames from 'classnames'
 
+import { Loading } from '../loading/loading'
 import { Size } from '../types/size.type'
 import { ButtonProps, ButtonShape } from './button.types'
 
@@ -24,7 +25,7 @@ export const Button: React.FC<ButtonProps> = ({
   isOutline = false,
   shape = 'default',
   isLoading = false,
-  //   loadingType = 'spinner',
+  loadingType = 'spinner',
   loadingText = '...',
   type = 'button',
   isLink = false,
@@ -47,6 +48,7 @@ export const Button: React.FC<ButtonProps> = ({
 
   return (
     <button type={type} disabled={isDisabled} {...rest} className={classes}>
+      {isLoading && <Loading type={loadingType} />}
       {isLoading ? loadingText : children}
     </button>
   )
