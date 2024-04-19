@@ -3,3 +3,7 @@
 @import 'tailwindcss/utilities';
 
 @import '../tailwind/components.css';
+
+html {
+  font-family: var(--font-dm-sans);
+}
