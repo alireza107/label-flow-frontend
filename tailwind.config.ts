@@ -45,6 +45,17 @@ const config: Config = {
   theme: {
     colors: tailwindColors,
     extend: {},
+    container: {
+      center: true,
+
+      padding: {
+        DEFAULT: '1rem',
+        sm: '1rem',
+        lg: '1.5rem',
+        xl: '2rem',
+        '2xl': '2.5rem',
+      },
+    },
   },
   plugins: [],
 }
