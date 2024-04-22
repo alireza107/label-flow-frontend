@@ -1,3 +1,3 @@
 export type BreadcrumbProps = {
-  links: { name: string; path: string }[]
+  breadcrumbs: { name: string; path: string }[]
 }
