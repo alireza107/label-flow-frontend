@@ -1,3 +1,15 @@
+import { Breadcrumb } from '@/components/breadcrumb'
+
 export default function Home(): JSX.Element {
-  return <div>main test</div>
+  const breadcrumbs = [
+    { name: 'Dashboard', path: '/' },
+    { name: 'Projects', path: '/projects' },
+  ]
+
+  return (
+    <div>
+      <Breadcrumb breadcrumbs={breadcrumbs} />
+      main test
+    </div>
+  )
 }

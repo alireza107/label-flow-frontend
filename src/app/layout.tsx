@@ -1,5 +1,7 @@
 import { DM_Sans } from 'next/font/google'
 
+import { Footer } from '@/components/footer'
+import { Header } from '@/components/header'
 import { Sidebar } from '@/components/sidebar/sidebar'
 
 import './globals.css'
@@ -20,7 +22,11 @@ export default function RootLayout({
     <html lang="en" className={`${dm_sans.variable}`}>
       <body className="min-h-screen flex">
         <Sidebar />
-        <main className="w-full">{children}</main>
+        <main className="grid grid-rows-[80px_1fr_auto] w-full bg-base-25">
+          <Header />
+          <div className="">{children}</div>
+          <Footer />
+        </main>
       </body>
     </html>
   )
