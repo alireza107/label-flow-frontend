@@ -1,6 +1,8 @@
+import { withTests } from '@storybook/addon-jest'
 import { Meta, StoryObj } from '@storybook/react'
 
 import { Badge } from '.'
+import results from '../../../.jest-test-results.json'
 
 const meta: Meta<typeof Badge> = {
   component: Badge,
@@ -10,6 +12,12 @@ const meta: Meta<typeof Badge> = {
 export default meta
 
 type Story = StoryObj<typeof Badge>
+
+export const Tests: Story = {
+  render: (args) => <Badge {...args}>Test</Badge>,
+}
+
+Tests.decorators = [withTests({ results })]
 
 export const BadgeColors: Story = {
   render: () => (
