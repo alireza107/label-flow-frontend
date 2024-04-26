@@ -4,9 +4,9 @@ import Link from 'next/link'
 
 import { BreadcrumbProps } from './breadcrumb.types'
 
-export const Breadcrumb: React.FC<BreadcrumbProps> = ({ breadcrumbs }) => {
+export const Breadcrumb: React.FC<BreadcrumbProps> = ({ breadcrumbs, className }) => {
   return (
-    <nav aria-label="breadcrumb">
+    <nav aria-label="breadcrumb" className={className}>
       <ol className="flex">
         {breadcrumbs.map((breadcrumb, index) => (
           <li key={index} className="text-sm">
