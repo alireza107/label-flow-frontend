@@ -1,6 +1,6 @@
 import classNames from 'classnames'
 
-import { MenuItemProps } from './menu-item.type'
+import { MenuItemProps } from './menu-item.types'
 
 const MenuItem: React.FC<MenuItemProps> = ({
   isDisabled,

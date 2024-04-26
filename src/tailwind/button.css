@@ -1,6 +1,6 @@
 .btn {
   @apply no-underline gap-2 h-12 px-7  border inline-flex  cursor-pointer select-none;
-  @apply items-center justify-center border-transparent text-center transition duration-100 ease-in-out rounded-lg;
+  @apply items-center justify-center border-transparent text-center transition duration-100 ease-in-out rounded-2xl;
   &:active:hover,
   &:active:focus {
     transform: scale(0.97);

@@ -1,15 +1,9 @@
-import { Breadcrumb } from '@/components/breadcrumb'
+import ProjectCard from './(projects)/_components/project_card'
 
 export default function Home(): JSX.Element {
-  const breadcrumbs = [
-    { name: 'Dashboard', path: '/' },
-    { name: 'Projects', path: '/projects' },
-  ]
-
   return (
-    <div>
-      <Breadcrumb breadcrumbs={breadcrumbs} />
-      main test
+    <div className="p-10">
+      <ProjectCard title="Abstract Colors" creator="Esthera Jackson" image="/images/project.png" />
     </div>
   )
 }
