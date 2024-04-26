@@ -1,0 +1,31 @@
+.avatar {
+  @apply flex justify-center items-center aspect-square overflow-hidden rounded-full  bg-base-75;
+
+  &-ringed {
+    @apply ring-2;
+
+    &-primary {
+      @apply ring-primary;
+    }
+    &-info {
+      @apply ring-info;
+    }
+    &-success {
+      @apply ring-success;
+    }
+    &-warning {
+      @apply ring-warning;
+    }
+    &-error {
+      @apply ring-error;
+    }
+  }
+
+  & > svg {
+    @apply opacity-40;
+  }
+
+  img {
+    @apply h-full w-full object-cover;
+  }
+}
