@@ -8,7 +8,7 @@
 
   /* default btn */
   & {
-    @apply border-base-200 bg-base-200 text-text  outline-text;
+    @apply border-white bg-white text-text  outline-text;
     @media (hover: hover) {
       &:hover {
         @apply border-base-200 bg-base-200;
@@ -151,6 +151,18 @@
   }
   &-block {
     @apply w-full;
+  }
+  &-circle {
+    @apply rounded-full h-12 w-12 p-0;
+    &:where(.btn-xs) {
+      @apply h-6 w-6 p-0;
+    }
+    &:where(.btn-sm) {
+      @apply h-8 w-8 p-0;
+    }
+    &:where(.btn-lg) {
+      @apply h-16 w-16 p-0;
+    }
   }
   &-square {
     @apply h-12 w-12 p-0;

@@ -17,7 +17,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
 
   return (
     <li className={classes} {...rest}>
-      {icon && <div>{icon}</div>}
+      {icon && icon}
       <div className="select-none">{text}</div>
     </li>
   )

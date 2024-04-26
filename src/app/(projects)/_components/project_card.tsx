@@ -1,18 +1,29 @@
 import Image from 'next/image'
 
 import { Button } from '@/components/button'
+import { IconFavorite } from '@/components/icons'
+
+import { tailwindColors } from '../../../../tailwind.config'
 
 type ProjectCardProps = {
   title: string
   image: string
   creator: string
+  isFavorite: boolean
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, creator, image }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, creator, image, isFavorite }) => {
   return (
     <div className="card">
-      <figure className="mb-4">
+      <figure className="mb-4 relative">
         <Image className="rounded-lg" src={image} alt={title} width={318} height={200} />
+        <Button shape="circle" className="absolute top-2 right-2">
+          <IconFavorite
+            stroke={tailwindColors.primary}
+            fill={isFavorite ? tailwindColors.primary : 'transparent'}
+            strokeWidth={2}
+          />
+        </Button>
       </figure>
       <div className="card-body">
         <div>
@@ -21,7 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, creator, image }) => {
         </div>
       </div>
       <div className="card-footer">
-        <Button variant="primary" size="small">
+        <Button size="small" variant="primary">
           Apply
         </Button>
       </div>

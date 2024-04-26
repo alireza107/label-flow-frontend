@@ -12,4 +12,4 @@ export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> &
     shape?: ButtonShape
   }
 
-export type ButtonShape = 'default' | 'wide' | 'full' | 'square'
+export type ButtonShape = 'default' | 'wide' | 'full' | 'square' | 'circle'

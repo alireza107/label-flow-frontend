@@ -33,5 +33,11 @@ module.exports = {
     ],
     'no-console': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 1,
+    'prettier/prettier': [
+      0,
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
 }
