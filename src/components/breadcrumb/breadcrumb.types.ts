@@ -1,3 +1,6 @@
+import { NonEmptyArray } from '@/types'
+
 export type BreadcrumbProps = {
-  breadcrumbs: { name: string; path: string }[]
+  breadcrumbs: NonEmptyArray<{ name: string; path: string }>
+  className?: string
 }
