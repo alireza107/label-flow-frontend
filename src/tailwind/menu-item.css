@@ -3,6 +3,9 @@
 
   &--active {
     @apply text-text border-r-4 border-primary;
+    svg {
+      @apply fill-primary stroke-primary;
+    }
   }
 
   @media (hover: hover) {
