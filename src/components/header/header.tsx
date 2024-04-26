@@ -1,18 +1,12 @@
 import React from 'react'
 
-import Image from 'next/image'
+import { Avatar } from '../avatar'
 
 export const Header: React.FC = () => {
   return (
     <header className="border-b border-base-75 flex items-center">
       <div className="container flex justify-end">
-        <Image
-          src="/images/profile.jpg"
-          alt="Logo"
-          width={50}
-          height={50}
-          className="aspect-square rounded-full"
-        />
+        <Avatar src="/images/profile.jpg" size="small" />
       </div>
     </header>
   )
