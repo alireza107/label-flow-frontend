@@ -23,7 +23,6 @@ export const Avatar: React.FC<AvatarProps> = ({
 }) => {
   const classes = classNames('avatar', className, {
     [`avatar-ringed avatar-ringed-${variant}`]: variant,
-    [`${sizeClasses[size]}`]: size,
   })
 
   return (
