@@ -4,6 +4,16 @@
 
 @import '../tailwind/components.css';
 
-html {
-  font-family: var(--font-dm-sans);
+@layer base {
+  :root {
+    --color-primary: theme('colors.primary');
+    --color-info: theme('colors.info');
+    --color-success: theme('colors.success');
+    --color-warning: theme('colors.warning');
+    --color-error: theme('colors.error');
+  }
+
+  html {
+    font-family: var(--font-dm-sans);
+  }
 }
