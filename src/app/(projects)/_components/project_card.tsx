@@ -3,8 +3,6 @@ import Image from 'next/image'
 import { Button } from '@/components/button'
 import { IconFavorite } from '@/components/icons'
 
-import { tailwindColors } from '../../../../tailwind.config'
-
 type ProjectCardProps = {
   title: string
   image: string
@@ -19,8 +17,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, creator, image, isFavo
         <Image className="rounded-lg" src={image} alt={title} width={318} height={200} />
         <Button shape="circle" className="absolute top-2 right-2">
           <IconFavorite
-            stroke={tailwindColors.primary}
-            fill={isFavorite ? tailwindColors.primary : 'transparent'}
+            stroke={'var(--color-primary)'}
+            fill={isFavorite ? 'var(--color-primary)' : 'transparent'}
             strokeWidth={2}
           />
         </Button>
