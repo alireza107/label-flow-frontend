@@ -1,23 +1,13 @@
-import { Tabs } from '@/components/tabs/tabs'
+import ProjectCard from './(projects)/_components/project_card'
 
 export default function Home(): JSX.Element {
   return (
-    <div>
-      <Tabs
-        tabs={[
-          {
-            label: 'Tab 1',
-            content: 'Tab 1 content',
-          },
-          {
-            label: 'Tab 2',
-            content: 'Tab 2 content',
-          },
-          {
-            label: 'Tab 3',
-            content: 'Tab 3 content',
-          },
-        ]}
+    <div className="p-10">
+      <ProjectCard
+        title="Abstract Colors"
+        creator="Esthera Jackson"
+        image="/images/project.png"
+        isFavorite={false}
       />
     </div>
   )
