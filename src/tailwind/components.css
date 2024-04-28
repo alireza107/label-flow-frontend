@@ -1,6 +1,7 @@
-@import './button.css';
-@import './menu-item.css';
-@import './loading.css';
-@import './badge.css';
-@import './avatar.css';
-@import '../components/progress/progress.css';
+@import './components/progress/progress.css';
+@import './../components/button/button.css';
+@import './../components/menu-item/menu-item.css';
+@import './../components/loading/loading.css';
+@import './../app/(projects)/_components/project_card.css';
+@import './../components/badge/badge.css';
+@import './../components/avatar/avatar.css';
