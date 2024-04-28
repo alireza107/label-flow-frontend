@@ -1,0 +1,15 @@
+.card {
+  @apply bg-white p-4 relative flex flex-col w-80 rounded-lg;
+
+  &-title {
+    @apply text-text font-bold text-[18px];
+  }
+
+  &-creator {
+    @apply text-base-200 text-[14px];
+  }
+
+  &-footer {
+    @apply mt-4 ml-auto;
+  }
+}

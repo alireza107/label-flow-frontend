@@ -15,6 +15,7 @@ const shapeClasses: Record<ButtonShape, string> = {
   wide: 'btn-wide',
   full: 'btn-block',
   square: 'btn-square',
+  circle: 'btn-circle',
   default: '',
 }
 
