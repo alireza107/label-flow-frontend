@@ -1,5 +1,5 @@
-import BaseIcon from '@/components/icons/base-icon'
-import { SvgIconType } from '@/components/icons/icon.types'
+import BaseIcon from '@/components/icons/base-icon';
+import { SvgIconType } from '@/components/icons/icon.types';
 
 export default function SvgIcon(props: SvgIconType): JSX.Element {
   return (

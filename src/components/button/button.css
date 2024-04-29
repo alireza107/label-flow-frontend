@@ -1,6 +1,6 @@
 .btn {
-  @apply no-underline gap-2 h-12 px-7  border inline-flex  cursor-pointer select-none;
-  @apply items-center justify-center border-transparent text-center transition duration-100 ease-in-out rounded-2xl;
+  @apply inline-flex h-12 cursor-pointer select-none  gap-2 border  px-7 no-underline;
+  @apply items-center justify-center rounded-2xl border-transparent text-center transition duration-100 ease-in-out;
   &:active:hover,
   &:active:focus {
     transform: scale(0.97);
@@ -59,7 +59,7 @@
     }
   }
   &-link {
-    @apply border-transparent bg-transparent text-primary   outline-none h-auto px-1;
+    @apply h-auto border-transparent bg-transparent   px-1 text-primary outline-none;
     @media (hover: hover) {
       &:hover {
         @apply border-transparent bg-transparent underline;
@@ -153,7 +153,7 @@
     @apply w-full;
   }
   &-circle {
-    @apply rounded-full h-12 w-12 p-0;
+    @apply h-12 w-12 rounded-full p-0;
     &:where(.btn-xs) {
       @apply h-6 w-6 p-0;
     }

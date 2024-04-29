@@ -1,23 +1,23 @@
-import { withTests } from '@storybook/addon-jest'
-import { Meta, StoryObj } from '@storybook/react'
+import { withTests } from '@storybook/addon-jest';
+import { Meta, StoryObj } from '@storybook/react';
 
-import results from '../../../.jest-test-results.json'
-import { Progress } from './progress'
+import results from '../../../.jest-test-results.json';
+import { Progress } from './progress';
 
 const meta: Meta<typeof Progress> = {
   component: Progress,
   tags: ['autodocs'],
-}
+};
 
-export default meta
+export default meta;
 
-type Story = StoryObj<typeof Progress>
+type Story = StoryObj<typeof Progress>;
 
 export const Tests: Story = {
   render: (args) => <Progress {...args} value={10} />,
-}
+};
 
-Tests.decorators = [withTests({ results })]
+Tests.decorators = [withTests({ results })];
 
 export const ProgressSpinner: Story = {
   render: () => (
@@ -28,7 +28,7 @@ export const ProgressSpinner: Story = {
       <Progress value={50} size="large" />
     </>
   ),
-}
+};
 
 export const ProgressSpinnerWithColors: Story = {
   render: () => (
@@ -40,4 +40,4 @@ export const ProgressSpinnerWithColors: Story = {
       <Progress value={90} size="normal" variant="error" />
     </>
   ),
-}
+};

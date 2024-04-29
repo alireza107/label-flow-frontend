@@ -1,22 +1,22 @@
-import { colord, extend } from 'colord'
-import mixPlugin from 'colord/plugins/mix'
-import type { Config } from 'tailwindcss'
+import { colord, extend } from 'colord';
+import mixPlugin from 'colord/plugins/mix';
+import type { Config } from 'tailwindcss';
 
-extend([mixPlugin])
+extend([mixPlugin]);
 
 export function generateDarkenColorFrom(input: string, percentage = 0.07): string {
-  return colord(input).darken(percentage).toHex()
+  return colord(input).darken(percentage).toHex();
 }
 
 export function generateForegroundColorFrom(input: string, percentage = 0.8): string {
   return colord(input)
     .mix(colord(input).isDark() ? 'white' : 'black', percentage)
-    .toHex()
+    .toHex();
 }
 
 type ColorObject = {
-  [key: string]: string
-}
+  [key: string]: string;
+};
 
 export const tailwindColors: ColorObject = {
   current: 'currentColor',
@@ -38,7 +38,7 @@ export const tailwindColors: ColorObject = {
   'warning-content': generateForegroundColorFrom('#FFCE20'),
   error: '#EE5D50',
   'error-content': generateForegroundColorFrom('#EE5D50'),
-}
+};
 
 const config: Config = {
   content: ['./src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
@@ -58,5 +58,5 @@ const config: Config = {
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;

@@ -1,10 +1,10 @@
-'use client'
+'use client';
 
-import Image from 'next/image'
-import { usePathname, useRouter } from 'next/navigation'
+import Image from 'next/image';
+import { usePathname, useRouter } from 'next/navigation';
 
-import { IconHome, IconProfile, IconSetting } from '../icons'
-import MenuItem from '../menu-item/menu-item'
+import { IconHome, IconProfile, IconSetting } from '../icons';
+import MenuItem from '../menu-item/menu-item';
 
 export const Sidebar: React.FC = () => {
   const SidebarItems = [
@@ -23,15 +23,15 @@ export const Sidebar: React.FC = () => {
       icon: <IconSetting />,
       link: '/settings',
     },
-  ]
+  ];
 
-  const pathname = usePathname()
+  const pathname = usePathname();
 
-  const router = useRouter()
+  const router = useRouter();
 
   return (
-    <aside className="py-12 border-r-[1px] border-base-75">
-      <div className="px-12 mb-3">
+    <aside className="border-r-[1px] border-base-75 py-12">
+      <div className="mb-3 px-12">
         <Image src="/images/logo.svg" alt="logo" width={194} height={85} />
       </div>
       <ul>
@@ -46,5 +46,5 @@ export const Sidebar: React.FC = () => {
         ))}
       </ul>
     </aside>
-  )
-}
+  );
+};

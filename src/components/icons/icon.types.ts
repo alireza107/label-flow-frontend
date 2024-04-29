@@ -1,3 +1,3 @@
-import { SVGAttributes } from 'react'
+import { SVGAttributes } from 'react';
 
-export type SvgIconType = SVGAttributes<SVGElement>
+export type SvgIconType = SVGAttributes<SVGElement>;

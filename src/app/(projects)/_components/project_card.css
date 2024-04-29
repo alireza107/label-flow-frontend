@@ -1,15 +1,15 @@
 .card {
-  @apply bg-white p-4 relative flex flex-col w-80 rounded-lg;
+  @apply relative flex w-80 flex-col rounded-lg bg-white p-4;
 
   &-title {
-    @apply text-text font-bold text-[18px];
+    @apply text-[18px] font-bold text-text;
   }
 
   &-creator {
-    @apply text-base-200 text-[14px];
+    @apply text-[14px] text-base-200;
   }
 
   &-footer {
-    @apply mt-4 ml-auto;
+    @apply ml-auto mt-4;
   }
 }

@@ -1,8 +1,8 @@
-'use client'
+'use client';
 
-import React, { FC } from 'react'
+import React, { FC } from 'react';
 
-import { SvgIconType } from './icon.types'
+import { SvgIconType } from './icon.types';
 
 export const BaseIcon: FC<SvgIconType> = ({
   color = 'currentColor',
@@ -28,7 +28,7 @@ export const BaseIcon: FC<SvgIconType> = ({
     >
       {children}
     </svg>
-  )
-}
+  );
+};
 
-export default BaseIcon
+export default BaseIcon;

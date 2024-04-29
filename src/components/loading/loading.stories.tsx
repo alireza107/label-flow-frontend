@@ -1,23 +1,23 @@
-import { withTests } from '@storybook/addon-jest'
-import { Meta, StoryObj } from '@storybook/react'
+import { withTests } from '@storybook/addon-jest';
+import { Meta, StoryObj } from '@storybook/react';
 
-import results from '../../../.jest-test-results.json'
-import { Loading } from './loading'
+import results from '../../../.jest-test-results.json';
+import { Loading } from './loading';
 
 const meta: Meta<typeof Loading> = {
   component: Loading,
   tags: ['autodocs'],
-}
+};
 
-export default meta
+export default meta;
 
-type Story = StoryObj<typeof Loading>
+type Story = StoryObj<typeof Loading>;
 
 export const Tests: Story = {
   render: (args) => <Loading {...args} />,
-}
+};
 
-Tests.decorators = [withTests({ results })]
+Tests.decorators = [withTests({ results })];
 
 export const LoadingSpinner: Story = {
   render: () => (
@@ -28,7 +28,7 @@ export const LoadingSpinner: Story = {
       <Loading size="large" />
     </>
   ),
-}
+};
 
 export const LoadingSpinnerWithColors: Story = {
   render: () => (
@@ -40,7 +40,7 @@ export const LoadingSpinnerWithColors: Story = {
       <Loading size="normal" variant="error" />
     </>
   ),
-}
+};
 
 export const LoadingRing: Story = {
   render: () => (
@@ -51,7 +51,7 @@ export const LoadingRing: Story = {
       <Loading size="large" type="ring" />
     </>
   ),
-}
+};
 
 export const LoadingRingWithColors: Story = {
   render: () => (
@@ -63,4 +63,4 @@ export const LoadingRingWithColors: Story = {
       <Loading size="normal" type="ring" variant="error" />
     </>
   ),
-}
+};

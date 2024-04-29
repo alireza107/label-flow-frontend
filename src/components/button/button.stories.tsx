@@ -1,23 +1,23 @@
-import { withTests } from '@storybook/addon-jest'
-import { Meta, StoryObj } from '@storybook/react'
+import { withTests } from '@storybook/addon-jest';
+import { Meta, StoryObj } from '@storybook/react';
 
-import { Button } from '.'
-import results from '../../../.jest-test-results.json'
+import { Button } from '.';
+import results from '../../../.jest-test-results.json';
 
 const meta: Meta<typeof Button> = {
   component: Button,
   tags: ['autodocs'],
-}
+};
 
-export default meta
+export default meta;
 
-type Story = StoryObj<typeof Button>
+type Story = StoryObj<typeof Button>;
 
 export const Tests: Story = {
   render: (args) => <Button {...args}>Click me</Button>,
-}
+};
 
-Tests.decorators = [withTests({ results })]
+Tests.decorators = [withTests({ results })];
 
 export const Colors: Story = {
   render: () => (
@@ -30,7 +30,7 @@ export const Colors: Story = {
       <Button variant="error">Error</Button>
     </>
   ),
-}
+};
 
 export const Outline: Story = {
   render: () => (
@@ -53,7 +53,7 @@ export const Outline: Story = {
       </Button>
     </>
   ),
-}
+};
 
 export const ButtonSizes: Story = {
   render: () => (
@@ -64,7 +64,7 @@ export const ButtonSizes: Story = {
       <Button size="large">Large</Button>
     </>
   ),
-}
+};
 
 export const WideButton: Story = {
   render: () => (
@@ -72,7 +72,7 @@ export const WideButton: Story = {
       <Button shape="wide">Wide Button</Button>
     </>
   ),
-}
+};
 
 export const FullButton: Story = {
   render: () => (
@@ -80,7 +80,7 @@ export const FullButton: Story = {
       <Button shape="full">Full Button</Button>
     </>
   ),
-}
+};
 
 export const SquareButtons: Story = {
   render: () => (
@@ -151,7 +151,7 @@ export const SquareButtons: Story = {
       </Button>
     </>
   ),
-}
+};
 
 export const DisabledButton: Story = {
   render: () => (
@@ -159,7 +159,7 @@ export const DisabledButton: Story = {
       <Button disabled>Disabled Button</Button>
     </>
   ),
-}
+};
 
 export const IconButton: Story = {
   render: () => (
@@ -200,7 +200,7 @@ export const IconButton: Story = {
       </Button>
     </>
   ),
-}
+};
 
 export const ButtonWithLoading: Story = {
   render: () => (
@@ -211,4 +211,4 @@ export const ButtonWithLoading: Story = {
       <Button isOutline isLoading={true} loadingType={'ring'} loadingText="Loading"></Button>
     </>
   ),
-}
+};

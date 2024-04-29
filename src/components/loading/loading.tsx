@@ -1,14 +1,14 @@
-import classNames from 'classnames'
+import classNames from 'classnames';
 
-import { Size } from '../types/size.type'
-import { LoadingProps } from './loading.types'
+import { Size } from '../types/size.type';
+import { LoadingProps } from './loading.types';
 
 const sizeClasses: Record<Size, string> = {
   tiny: 'loading-xs',
   small: 'loading-sm',
   normal: 'loading-md',
   large: 'loading-lg',
-}
+};
 
 export const Loading: React.FC<LoadingProps> = ({
   type = 'spinner',
@@ -22,7 +22,7 @@ export const Loading: React.FC<LoadingProps> = ({
     { [`${sizeClasses[size]}`]: size },
     { [`loading-${variant}`]: variant },
     { [`loading-${type}`]: type },
-  )
+  );
 
-  return <span className={classes}></span>
-}
+  return <span className={classes}></span>;
+};
