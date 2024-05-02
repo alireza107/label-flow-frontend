@@ -1,5 +1,5 @@
 .avatar {
-  @apply flex justify-center items-center aspect-square overflow-hidden rounded-full  bg-base-75;
+  @apply flex aspect-square items-center justify-center overflow-hidden rounded-full  bg-base-75;
 
   &-ringed {
     @apply ring-2;

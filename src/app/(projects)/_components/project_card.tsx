@@ -1,21 +1,21 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
-import { Button } from '@/components/button'
-import { IconFavorite } from '@/components/icons'
+import { Button } from '@/components/button';
+import { IconFavorite } from '@/components/icons';
 
 type ProjectCardProps = {
-  title: string
-  image: string
-  creator: string
-  isFavorite: boolean
-}
+  title: string;
+  image: string;
+  creator: string;
+  isFavorite: boolean;
+};
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, creator, image, isFavorite }) => {
   return (
     <div className="card">
-      <figure className="mb-4 relative">
+      <figure className="relative mb-4">
         <Image className="rounded-lg" src={image} alt={title} width={318} height={200} />
-        <Button shape="circle" className="absolute top-2 right-2">
+        <Button shape="circle" className="absolute right-2 top-2">
           <IconFavorite
             stroke={'var(--color-primary)'}
             fill={isFavorite ? 'var(--color-primary)' : 'transparent'}
@@ -35,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, creator, image, isFavo
         </Button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

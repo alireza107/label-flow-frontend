@@ -1,5 +1,5 @@
 .progress {
-  @apply relative w-full appearance-none overflow-hidden h-2 rounded-lg bg-base-200/50;
+  @apply relative h-2 w-full appearance-none overflow-hidden rounded-lg bg-base-200/50;
 
   &::-moz-progress-bar {
     @apply bg-black;
@@ -21,10 +21,10 @@
   }
 
   &::-webkit-progress-bar {
-    @apply bg-transparent rounded-lg;
+    @apply rounded-lg bg-transparent;
   }
   &::-webkit-progress-value {
-    @apply bg-black rounded-lg;
+    @apply rounded-lg bg-black;
   }
   &-primary::-webkit-progress-value {
     @apply bg-primary;

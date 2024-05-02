@@ -1,15 +1,15 @@
-'use client'
+'use client';
 
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-import { TabsProps } from './tabs.types'
+import { TabsProps } from './tabs.types';
 
 export const Tabs: React.FC<TabsProps> = ({ tabs }) => {
-  const [activeTab, setActiveTab] = useState<number>(0)
+  const [activeTab, setActiveTab] = useState<number>(0);
 
   const handleTabClick = (index: number) => {
-    setActiveTab(index)
-  }
+    setActiveTab(index);
+  };
 
   return (
     <div className="tabs">
@@ -42,5 +42,5 @@ export const Tabs: React.FC<TabsProps> = ({ tabs }) => {
         </div>
       ))}
     </div>
-  )
-}
+  );
+};

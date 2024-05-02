@@ -1,23 +1,23 @@
-import { withTests } from '@storybook/addon-jest'
-import { Meta, StoryObj } from '@storybook/react'
+import { withTests } from '@storybook/addon-jest';
+import { Meta, StoryObj } from '@storybook/react';
 
-import results from '../../../.jest-test-results.json'
-import { Avatar } from './avatar'
+import results from '../../../.jest-test-results.json';
+import { Avatar } from './avatar';
 
 const meta: Meta<typeof Avatar> = {
   component: Avatar,
   tags: ['autodocs'],
-}
+};
 
-export default meta
+export default meta;
 
-type Story = StoryObj<typeof Avatar>
+type Story = StoryObj<typeof Avatar>;
 
 export const Tests: Story = {
   render: (args) => <Avatar {...args} />,
-}
+};
 
-Tests.decorators = [withTests({ results })]
+Tests.decorators = [withTests({ results })];
 
 export const AvatarSizes: Story = {
   render: () => (
@@ -28,7 +28,7 @@ export const AvatarSizes: Story = {
       <Avatar size="large" />
     </>
   ),
-}
+};
 
 export const AvatarWithColors: Story = {
   render: () => (
@@ -40,7 +40,7 @@ export const AvatarWithColors: Story = {
       <Avatar size="normal" variant="error" />
     </>
   ),
-}
+};
 
 export const AvatarWithImage: Story = {
   render: () => (
@@ -51,7 +51,7 @@ export const AvatarWithImage: Story = {
       <Avatar size="large" src="https://avatars.githubusercontent.com/u/12592949?v=4" />
     </>
   ),
-}
+};
 
 export const AvatarWithImageAndColors: Story = {
   render: () => (
@@ -78,4 +78,4 @@ export const AvatarWithImageAndColors: Story = {
       />
     </>
   ),
-}
+};

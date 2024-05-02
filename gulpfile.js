@@ -4,12 +4,12 @@ const gulp = require('gulp'),
   rename = require('gulp-rename'),
   svgmin = require('gulp-svgmin'),
   wrap = require('gulp-wrap'),
-  fs = require('fs')
+  fs = require('fs');
 const svg_files_folder = 'icons/icons-svg',
   dest_folder = 'src/components/icons/',
-  jsx_template = 'icons/icon-template.txt'
+  jsx_template = 'icons/icon-template.txt';
 
-let icons_component_list = []
+let icons_component_list = [];
 
 gulp.task('icons_components', function () {
   return gulp
@@ -58,12 +58,12 @@ gulp.task('icons_components', function () {
     .pipe(wrap({ src: jsx_template }))
     .pipe(
       rename(function (path) {
-        icons_component_list.push(path.basename)
-        path.extname = '.tsx'
+        icons_component_list.push(path.basename);
+        path.extname = '.tsx';
       }),
     )
-    .pipe(gulp.dest(dest_folder + '/src'))
-})
+    .pipe(gulp.dest(dest_folder + '/src'));
+});
 
 gulp.task('icons_component_main', function (cb) {
   return fs.writeFile(
@@ -74,16 +74,16 @@ gulp.task('icons_component_main', function (cb) {
           let module_name = (item.charAt(0).toUpperCase() + item.substr(1)).replace(
             /-([a-z])/g,
             function (g) {
-              return g[1].toUpperCase()
+              return g[1].toUpperCase();
             },
-          )
+          );
 
-          return `export { default as Icon${module_name} } from './src/${item}'`
+          return `export { default as Icon${module_name} } from './src/${item}'`;
         })
         .join('\n') +
       '\n',
     cb,
-  )
-})
+  );
+});
 
-gulp.task('default', gulp.series('icons_components', 'icons_component_main'))
+gulp.task('default', gulp.series('icons_components', 'icons_component_main'));

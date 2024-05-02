@@ -1,4 +1,4 @@
-import ProjectCard from './(projects)/_components/project_card'
+import ProjectCard from './(projects)/_components/project_card';
 
 export default function Home(): JSX.Element {
   return (
@@ -10,5 +10,5 @@ export default function Home(): JSX.Element {
         isFavorite={false}
       />
     </div>
-  )
+  );
 }

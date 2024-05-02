@@ -1,23 +1,23 @@
-import { withTests } from '@storybook/addon-jest'
-import { Meta, StoryObj } from '@storybook/react'
+import { withTests } from '@storybook/addon-jest';
+import { Meta, StoryObj } from '@storybook/react';
 
-import { Badge } from '.'
-import results from '../../../.jest-test-results.json'
+import { Badge } from '.';
+import results from '../../../.jest-test-results.json';
 
 const meta: Meta<typeof Badge> = {
   component: Badge,
   tags: ['autodocs'],
-}
+};
 
-export default meta
+export default meta;
 
-type Story = StoryObj<typeof Badge>
+type Story = StoryObj<typeof Badge>;
 
 export const Tests: Story = {
   render: (args) => <Badge {...args}>Test</Badge>,
-}
+};
 
-Tests.decorators = [withTests({ results })]
+Tests.decorators = [withTests({ results })];
 
 export const BadgeColors: Story = {
   render: () => (
@@ -30,7 +30,7 @@ export const BadgeColors: Story = {
       <Badge variant="error">Error</Badge>
     </>
   ),
-}
+};
 
 export const BadgeSizes: Story = {
   render: () => (
@@ -41,4 +41,4 @@ export const BadgeSizes: Story = {
       <Badge size="large">Large</Badge>
     </>
   ),
-}
+};
