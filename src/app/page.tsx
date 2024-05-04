@@ -1,4 +1,5 @@
 import { MultiAvatar } from '@/components/multi-avatar/multi-avatar';
+import Skeleton from '@/components/skeleton/skeleton';
 
 import ProjectCard from './(projects)/_components/project_card';
 
@@ -24,6 +25,7 @@ export default function Home(): JSX.Element {
         size="small"
         max={4}
       />
+      <Skeleton className="bg-error" />
     </div>
   );
 }
