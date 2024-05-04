@@ -20,13 +20,17 @@ export const Avatar: React.FC<AvatarProps> = ({
   size = 'normal',
   src,
   alt = '',
+  style,
 }) => {
   const classes = classNames('avatar', className, {
     [`avatar-ringed avatar-ringed-${variant}`]: variant,
   });
 
   return (
-    <div style={{ width: sizeClasses[size], height: sizeClasses[size] }} className={classes}>
+    <div
+      style={{ width: sizeClasses[size], height: sizeClasses[size], ...style }}
+      className={classes}
+    >
       {src ? (
         <Image src={src} width={sizeClasses[size]} height={sizeClasses[size]} alt={alt} />
       ) : (
