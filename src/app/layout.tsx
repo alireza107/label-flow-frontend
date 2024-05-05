@@ -3,6 +3,7 @@ import { DM_Sans } from 'next/font/google';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { Sidebar } from '@/components/sidebar/sidebar';
+import QueryProvider from '@/providers/react-query-provider';
 
 import './globals.css';
 
@@ -21,12 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dm_sans.variable}`}>
       <body className="flex min-h-screen">
-        <Sidebar />
-        <main className="grid w-full grid-rows-[80px_1fr_auto] bg-base-25">
-          <Header />
-          <div className="">{children}</div>
-          <Footer />
-        </main>
+        <QueryProvider>
+          <Sidebar />
+          <main className="grid w-full grid-rows-[80px_1fr_auto] bg-base-25">
+            <Header />
+            <div className="">{children}</div>
+            <Footer />
+          </main>
+        </QueryProvider>
       </body>
     </html>
   );
