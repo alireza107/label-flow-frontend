@@ -1,5 +1,5 @@
 import { MultiAvatar } from '@/components/multi-avatar/multi-avatar';
-import Skeleton from '@/components/skeleton/skeleton';
+import { Skeleton } from '@/components/skeleton';
 
 import ProjectCard from './(projects)/_components/project_card';
 
