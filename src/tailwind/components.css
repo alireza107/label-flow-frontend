@@ -2,7 +2,7 @@
 @import './../components/button/button.css';
 @import './../components/menu-item/menu-item.css';
 @import './../components/loading/loading.css';
-@import './../app/(projects)/_components/project_card.css';
+@import './../app/(projects)/_components/project-card/project-card.css';
 @import './../components/badge/badge.css';
 @import './../components/avatar/avatar.css';
 @import './../components/tabs/tabs.css';
