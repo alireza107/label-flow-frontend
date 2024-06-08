@@ -1,0 +1,6 @@
+.backdrop {
+  @apply fixed inset-0 z-10 bg-opacity-0;
+}
+.popover {
+  @apply absolute z-20 my-1 rounded-md bg-white p-4 shadow-lg;
+}
