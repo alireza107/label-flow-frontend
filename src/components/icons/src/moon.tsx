@@ -9,7 +9,7 @@ export default function SvgIcon(props: SvgIconType): JSX.Element {
       </g>
       <defs>
         <clipPath id="a">
-          <rect width="24" height="24" />
+          <rect width="18" height="18" />
         </clipPath>
       </defs>
     </BaseIcon>
