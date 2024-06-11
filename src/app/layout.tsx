@@ -2,6 +2,7 @@ import { DM_Sans } from 'next/font/google';
 
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
+import { Notifications } from '@/components/notification';
 import { Sidebar } from '@/components/sidebar/sidebar';
 import QueryProvider from '@/providers/react-query-provider';
 
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dm_sans.variable}`}>
       <body className="flex min-h-screen">
+        <Notifications />
         <QueryProvider>
           <Sidebar />
           <main className="grid w-full grid-rows-[80px_1fr_auto] bg-base-25">
